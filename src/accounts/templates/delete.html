@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-2">
+        <div class="card card-body">
+            <P>Are you sure want to delete '{{item}}' ?</P>
+            <form action="" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Confirmed</button>
+                <a name="" id="" class="btn btn-warning" href="{% url 'home' %}" role="button">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

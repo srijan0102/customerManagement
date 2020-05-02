@@ -147,7 +147,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sharmafamily.at@gmail.com'
-EMAIL_HOST_PASSWORD = 'athmin@1782'
+EMAIL_HOST_PASSWORD = '******'
 
 #AWS
 #S3 BUCKETS CONFIG

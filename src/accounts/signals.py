@@ -6,7 +6,7 @@ def customer_profile(sender, instance, created, **kwargs):
     if created:
         group = Group.objects.get(name='CUSTOMER')
         instance.groups.add(group)
-        Customer.objects.create(user=instance, name=instance.name, email=instance.email)
+        Customer.objects.create(user=instance,  email=instance.email)
         print('Profile created')
 
 post_save.connect(receiver=customer_profile, sender=User)
